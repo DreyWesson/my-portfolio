@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
+    "url": "git+http://dreywesson.github.io/my-portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Drey Wesson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobidev/simplefolio/issues"
+    "url": "http://dreywesson.github.io/my-portfolio"
   },
-  "homepage": "http://dreywesson.github.io/portfolio",
+  "homepage": "http://dreywesson.github.io/my-portfolio",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
