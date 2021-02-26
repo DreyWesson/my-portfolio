@@ -9,9 +9,13 @@
     <meta name="keywords" content="[username], [name], skill" />
     <meta name="description" content="[Your name here] | Developer" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap" rel="stylesheet">
     <style>
       h1.role {
         font-family: Georgia, "Times New Roman", Times, serif;
@@ -28,49 +32,89 @@
   </head>
   <body>
     <div id="top"></div>
-
     <div id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title" class="load-hidden">
+        <h1 class="hero-title load-hidden role">
           Hi, I am
           <br />
           <span class="text-color-main">DreyWesson.</span>
           <br />
-            <span style="font-size: 0.8em; font-family: Georgia,Times New Roman,Times,serif; color:#4a4a4a">Developer</span>
+          <span class="hero-dev-role">Developer</span>
           <br />
-            <span style="font-size: 0.8em; font-family: Georgia,Times New Roman,Times,serif; color:#4a4a4a">Designer</span>
-          <br />
-            <span style="font-size: 0.8em; font-family: Georgia,Times New Roman,Times,serif; color:#4a4a4a">Minimalist</span>
+          <span class="hero-dev-role">Minimalist</span>
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
         </p>
       </div>
+                <!-- **** Effect Wrapper **** -->
+      <div class="effect-wrap">
+        <div class="effect square"></div>
+        <div class="effect dotted">      
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+
+        </div>
+        <div class="effect circle-dotted"></div>
+        <div class="leaf-wrapper" >
+          <div class="effect leaf-1"></div>
+          <div class="effect leaf-2"></div>
+          <div class="effect leaf-3"></div>
+        </div>
+      </div>
     </div>
     <!-- /END Hero Section -->
 
     <!-- **** About Section **** -->
-    <section id="about">
+    <section  id="about">
+      <div class="verified"></div>
       <div class="container">
         <h2 class="section-title">
           About me
         </h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image" >
+            <div class="about-wrapper__image">
               <img
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="./assets/DW.jpg"
-                alt="Profile Image"
+              class="img-fluid rounded shadow-lg"
+              height="auto"
+              width="300px"
+              src="./assets/DW.jpg"
+              alt="Profile Image"
               />
+              <div class="social_links">
+                <a href="#" class=""><i class="fab fa-github"></i></a>
+                <a href="#" class=""><i class="fab fa-twitter"></i></a>
+                <a href="#" class=""><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class=""><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
             </div>
+           
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
-              <p style="font-weight: bold;" class="about-wrapper__info-text">
-                Developer. Designer. Minimalist.
+              <p style="font-weight: 900;" class="about-wrapper__info-text">
+                Developer &nbsp;·&nbsp; Designer &nbsp;·&nbsp;Minimalist
               </p>
               <p class="about-wrapper__info-text">
                 I'm a minimalist. I love keeping it simple, 
@@ -79,11 +123,151 @@
                 other times I'm on pinterest.
                 Oh and I love walkable cities and parks.
               </p>
-              <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="https://dreywesson.github.io/">
-                  View Resume
-                </a>
+              <div class="d-flex mt-3">
+                <button type="button" onclick="location.href='https://dreywesson.github.io';" class="btn btn-primary btn-lg" style="margin-right: 20px; font-weight: bold;">Hire Me</button>
+                <button type="button" class="btn btn-outline-light btn-lg" >Download CV</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 tabs">
+            <div class="about-tabs">
+              <span class="tab-item outer-shadow active" data-target=".frontend">
+                Frontend
               </span>
+              <span class="tab-item" data-target=".backend" >
+                Backend
+              </span>
+              <span class="tab-item" data-target=".others" >
+                Others
+              </span>
+            </div>
+
+            <div class="container about-stack">
+
+              <!-- FRONTEND TAB -->
+              <div class="frontend tab-content active">
+                <div class="stack-tab">
+                  <div class="progressbar-container frontend-left">
+                    <p style="width:95%" data-value="95">HTML5</p>
+                    <progress max="100" value="95" class="html5">
+                      <div class="progress-bar">
+                        <span style="width: 95%">95%</span>
+                      </div>
+                    </progress> 
+
+                    <p style="width:86%" data-value="86">CSS3</p>
+                    <progress max="100" value="86" class="css3">
+                      <div class="progress-bar">
+                        <span style="width: 86%">86%</span>
+                      </div>
+                    </progress>
+
+                    <p style="width:83%" data-value="83">SCSS</p>
+                    <progress max="100" value="83" class="scss">
+                      <div class="progress-bar">
+                        <span style="width: 83%">83%</span>
+                      </div>
+                    </progress>
+                  </div>
+
+                  <div class="progressbar-container frontend-right">
+                    <p style="width:90%" data-value="90">ReactJS</p>
+                    <progress max="100" value="90" class="react">
+                      <div class="progress-bar">
+                        <span style="width: 90%">90%</span>
+                      </div>
+                    </progress>
+
+                    <p style="width:95%; " data-value="95">Javascript</p>
+                    <progress max="100" value="95" class="javascript">
+                      <div class="progress-bar">
+                        <span style="width: 95%">95%</span>
+                      </div>
+                    </progress>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BACKEND TAB -->
+              <div class="backend tab-content">
+                <div class="stack-tab">
+                  <div class="progressbar-container stack-left">
+                    <p style="width:87%" data-value="87">NodeJS</p>
+                    <progress max="100" value="87" class="node">
+                      <div class="progress-bar">
+                        <span style="width: 87%">87%</span>
+                      </div>
+                    </progress>   
+
+                    <p style="width:89%" data-value="89">Express</p>
+                    <progress max="100" value="89" class="express">
+                      <div class="progress-bar">
+                        <span style="width: 89%">89%</span>
+                      </div>
+                    </progress>
+                    </div>
+                    <div class="progressbar-container stack-right">
+                    <p style="width:89%" data-value="89">Firebase</p>
+                    <progress max="100" value="89" class="firebase">
+                      <div class="progress-bar">
+                        <span style="width: 89%">89%</span>
+                      </div>
+                    </progress>
+
+                    <p style="width:89%" data-value="89">MongoDB</p>
+                    <progress max="100" value="89" class="mongodb">
+                      <div class="progress-bar">
+                        <span style="width: 89%">89%</span>
+                      </div>
+                    </progress>
+                  </div>
+                </div> 
+              </div>
+
+              <!-- OTHERS TAB -->
+              <div class="others tab-content">
+                  <!-- docker,jest/jasmine, ejs, gsap/scrollreveal -->
+                <div class="stack-tab">
+                  <div class="progressbar-container stack-left">
+                    <p style="width:95%" data-value="95">Redux</p>
+                    <progress max="100" value="95" class="redux">
+                      <div class="progress-bar">
+                        <span style="width: 95%">95%</span>
+                      </div>
+                    </progress>   
+
+                    <p style="width:80%" data-value="80">Webpack</p>
+                    <progress max="100" value="80" class="webpack">
+                      <div class="progress-bar">
+                        <span style="width: 80%">80%</span>
+                      </div>
+                    </progress>
+
+                    <p style="width:89%" data-value="89">Git</p>
+                    <progress max="100" value="89" class="git">
+                      <div class="progress-bar">
+                        <span style="width: 89%">89%</span>
+                      </div>
+                    </progress>
+                  </div>
+
+                  <div class="progressbar-container stack-right">
+                    <p style="width:95%" data-value="95">Bootstrap</p>
+                    <progress max="100" value="95" class="bootstrap">
+                      <div class="progress-bar">
+                        <span style="width: 95%">95%</span>
+                      </div>
+                    </progress>
+
+                    <p style="width:94%" data-value="94">Material-UI</p>
+                    <progress max="100" value="94" class="material-ui">
+                      <div class="progress-bar">
+                        <span style="width: 94%">94%</span>
+                      </div>
+                    </progress>
+                  </div>
+                </div> 
+              </div>
             </div>
           </div>
         </div>

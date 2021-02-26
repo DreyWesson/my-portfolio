@@ -1,4 +1,5 @@
 #about {
+  position: relative;
   background-color: $primary-color;
   background-image: linear-gradient(
     135deg,
@@ -7,6 +8,7 @@
   );
   color: $white-color;
   height: 100%;
+  min-height: 115vh;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -18,6 +20,12 @@
     clip-path: none;
   }
 
+  .about-effect-wrap {
+    .about-effect {
+      position: absolute;
+    }
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
@@ -25,6 +33,7 @@
 
     &__image {
       display: flex;
+      flex-direction: column;
       height: 100%;
       align-items: center;
       justify-content: center;
@@ -34,6 +43,19 @@
       }
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
+      }
+      .social_links {
+        display: flex;
+        justify-content: space-between;
+        a {
+          font-size: 22px;
+          padding: 20px;
+          color: white;
+
+          &:hover {
+            color: #007bff;
+          }
+        }
       }
     }
 
@@ -72,6 +94,68 @@
             background: transparent;
             font-style: normal;
           }
+        }
+      }
+    }
+
+    .tabs {
+      // display: flex;
+      // justify-content: center;
+      // margin: auto;
+      .about-tabs {
+        padding: 50px 0px 30px;
+        text-align: center;
+        .tab-item {
+          display: inline-block;
+          margin: 0px 6px 10px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: $white-color;
+
+          &.active {
+            color: rgb(184, 115, 248);
+          }
+          &:hover:not(.active) {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .about-stack {
+      h2 {
+        text-align: center;
+        margin: 20px auto;
+        font-weight: bold;
+      }
+    }
+  }
+  .tab-content {
+    display: none;
+    &.active {
+      display: block;
+    }
+    .stack-tab {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      @include respond(phone) {
+        flex-direction: column;
+      }
+      @include respond(phone-sm) {
+        flex-direction: column;
+      }
+      .progressbar-container {
+        width: 40%;
+        @include respond(phone) {
+          width: 100%;
+          margin: 0 auto;
+        }
+        @include respond(phone-sm) {
+          width: 100%;
+          margin: 0 auto;
         }
       }
     }
