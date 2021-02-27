@@ -114,6 +114,7 @@ p[data-value] {
 .node::-webkit-progress-value,
 .firebase::-webkit-progress-value,
 .mongodb::-webkit-progress-value,
+.docker::-webkit-progress-value,
 .express::-webkit-progress-value {
   background-image: -webkit-linear-gradient(
       135deg,
@@ -168,6 +169,7 @@ p[data-value] {
 .node::-moz-progress-bar,
 .firebase::-moz-progress-bar,
 .express::-moz-progress-bar,
+.docker::-moz-progress-bar,
 .mongodb::-moz-progress-bar {
   /* Gradient background with Stripes */
   background-image: -moz-linear-gradient(

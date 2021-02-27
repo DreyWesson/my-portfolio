@@ -31,8 +31,20 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="index.html">DW</a>
+          </div>
+          <div class="hambuger-btn"></div>
+        </div>
+      </div>
+    </header>
+
     <div id="top"></div>
-    <div id="hero" class="jumbotron">
+    <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden role">
           Hi, I am
@@ -44,7 +56,7 @@
           <span class="hero-dev-role">Minimalist</span>
         </h1>
         <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+          <a class="cta-btn cta-btn--hero" href="#about">Continue</a>
         </p>
       </div>
                 <!-- **** Effect Wrapper **** -->
@@ -81,7 +93,7 @@
           <div class="effect leaf-3"></div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- /END Hero Section -->
 
     <!-- **** About Section **** -->
@@ -97,7 +109,7 @@
               <img
               class="img-fluid rounded shadow-lg"
               height="auto"
-              width="300px"
+              width="250px"
               src="./assets/DW.jpg"
               alt="Profile Image"
               />
@@ -108,8 +120,7 @@
                 <a href="#" class=""><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
               </div>
-            </div>
-           
+            </div>    
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
@@ -141,9 +152,7 @@
                 Others
               </span>
             </div>
-
             <div class="container about-stack">
-
               <!-- FRONTEND TAB -->
               <div class="frontend tab-content active">
                 <div class="stack-tab">
@@ -205,8 +214,15 @@
                         <span style="width: 89%">89%</span>
                       </div>
                     </progress>
-                    </div>
-                    <div class="progressbar-container stack-right">
+
+                    <p style="width:41%" data-value="11">Docker</p>
+                    <progress max="100" value="11" class="docker">
+                      <div class="progress-bar">
+                        <span style="width: 11%">21%</span>
+                      </div>
+                    </progress>
+                  </div>
+                  <div class="progressbar-container stack-right">
                     <p style="width:89%" data-value="89">Firebase</p>
                     <progress max="100" value="89" class="firebase">
                       <div class="progress-bar">
@@ -250,7 +266,6 @@
                       </div>
                     </progress>
                   </div>
-
                   <div class="progressbar-container stack-right">
                     <p style="width:95%" data-value="95">Bootstrap</p>
                     <progress max="100" value="95" class="bootstrap">
@@ -276,137 +291,210 @@
     <!-- /END About Section -->
 
     <!-- **** Projects Section **** -->
-    <section id="projects">
+    <section id="projects" class="py-5" >
       <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">
-            Projects
-          </h2>
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Face Recognition App</h3>
-                <div>
-                  <p class="mb-4">
-                    This project uses react framework. It maps out every human faces in
-                    pictures.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://faces-dreywesson.netlify.com/">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/DreyWesson/face-app">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://faces-dreywesson.netlify.com/" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" width="100%"src="./assets/faces.png" alt=""/>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">React Project</h3>
-                <div>
-                  <p class="mb-4">
-                    This project is built with REACT. It fetches random robot images. 
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://dreywesson.github.io/wesson-bots/">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/DreyWesson/wesson-bots">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://dreywesson.github.io/wesson-bots/" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="https://source.unsplash.com/1366x767/?random,robots" alt=""/>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Synchronize Images With Your Mood</h3>
-                <div>
-                  <p class="mb-4">
-                    This project is a PWA site that spits out images based on your mood. 
-                    You get to play rock, paper & scissors and blackjack. 
-                    And can fetch popular repo(s) from github.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://dreywesson.github.io/">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/DreyWesson/dreywesson.github.io">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://dreywesson.github.io/" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="https://source.unsplash.com/1366x767/?random,mood" alt=""/>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-                    <!-- Each .row is a project -->
-                    <div class="row">
-                      <div class="col-lg-4 col-sm-12">
-                        <div class="project-wrapper__text">
-                          <h3 class="project-wrapper__text-title">Synchronize Images With Your Mood</h3>
-                          <div>
-                            <p class="mb-4">
-                              This project is a PWA site that spits out images based on your mood. 
-                              You get to play rock, paper & scissors and blackjack. 
-                              And can fetch popular repo(s) from github.
-                            </p>
-                          </div>
-                          <a target="_blank" class="cta-btn cta-btn--hero" href="https://wessinterest.netlify.app/">
-                            See Live
-                          </a>
-                          <a target="_blank" class="cta-btn text-color-main" href="https://github.com/DreyWesson/dreywesson.github.io">
-                            Source Code
-                          </a>
+        <h2 class="section-title dark-blue-text">
+          Projects
+        </h2> 
+        <div class="row">
+          <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="20000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="./assets/memories2.png">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-weight: bold; font-size: 18px;">Memories</h5>
+                          <p class="">Good memories are like mind's special treatment. You can save pictures of favourite places and moments on this app.
+                          </p>
                         </div>
-                      </div>
-                      <div class="col-lg-8 col-sm-12">
-                        <div class="project-wrapper__image">
-                          <a href="https://wessinterest.netlify.app/" target="_blank">
-                            <div data-tilt class="thumbnail rounded">
-                              <img class="img-fluid" src="https://source.unsplash.com/1366x767/?random,person" alt=""/>
-                            </div>
-                          </a>
+                        <ul class="list-group list-group-flush">
+                          <li style="border-top: 1px solid rgb(216, 214, 214);" class="list-group-item">Redux</li>
+                          <li class="list-group-item">MongoDB & Pusher</li>
+                          <li class="list-group-item">React & Material-UI</li>
+                          <li class="list-group-item">NodeJS, Express & Swagger</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="http://memories-99585.web.app/" class=" btn btn-dark" target="_blank" style="margin-left: 10px;">See Live</a>
+                          <a href="https://github.com/DreyWesson/memories" target="_blank" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
                         </div>
                       </div>
                     </div>
-                    <!-- /END Project -->
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-2 col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                        <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item" style="border-top: 1px solid rgb(216, 214, 214);">MongoDB</li>
+                          <li class="list-group-item">React</li>
+                          <li class="list-group-item">Material-UI</li>
+                          <li class="list-group-item">NodeJS</li>
+                        </ul>
+                        <div class="d-flex justify-content-between py-2">
+                          <a href="#" class=" btn btn-dark" style="margin-left: 10px;">See Live</a>
+                          <a href="#" class="btn btn-outline-dark" style="margin-right: 10px;">See Code</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-12 text-center">
+            <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
         </div>
       </div>
     </section>
@@ -419,14 +507,15 @@
           Contact
         </h2>
         <div class="contact-wrapper">
-          <h3 class="contact-wrapper__text">
+          <h3 class="contact-wrapper__text" style="color: goldenrod;">
             Love my stack?
           </h3>
+          <p style="max-width: 300px; text-align:center; margin: 15px auto;">Contact forms are such a task, right?. Shoot me a mail, I'll respond in less than 48hrs.</p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:dreywesson@gmail.com"
-            >Hit me up</a
+            >Email Me</a
           >
         </div>
       </div>
@@ -439,7 +528,8 @@
         <a href="#top" class="back-to-top" aria-label="top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
-        <div class="social-links">
+
+        <!-- <div class="social-links">
           <a href="https://twitter.com/DreyWesson" target="_blank" aria-label="twitter">
             <i class="fa fa-twitter fa-inverse"></i>
           </a>
@@ -450,12 +540,19 @@
           <a href="https://github.com/DreyWesson" target="_blank" aria-label="github">
             <i class="fa fa-github fa-inverse"></i>
           </a>
-        </div>
+        </div> -->
 
+        <div class="social_links d-flex justify-content-around" style="max-width: 400px; margin: 0 auto;">
+          <a href="#" class="" style="color: white;"><i class="fab fa-github"></i></a>
+          <a href="#" class="" style="color: white;"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="" style="color: white;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="" style="color: white;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+        </div>
         <hr />
 
         <p class="footer__text">
-          © 2020 developed by <a href="https://github.com/DreyWesson" target="_blank">Drey Wesson</a>
+          © 2020 developed by <a href="https://github.com/DreyWesson" target="_blank">Dare Oduwole</a>
           </a>
         </p>
       </div>
