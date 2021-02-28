@@ -36,20 +36,22 @@
   }
 }
 
-.social-links {
+.social_links {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  max-width: 50%;
+  margin: 0 auto;
 
   a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: $white-color;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin: $default-font-size $default-font-size;
+    font-size: 1.7rem;
+    // width: 5rem;
+    // height: 5rem;
+    margin-top: 20px;
+    // margin: $default-font-size $default-font-size;
     transition: all 0.2s ease-in;
 
     &:hover {

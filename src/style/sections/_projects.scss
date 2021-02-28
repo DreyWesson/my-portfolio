@@ -1,8 +1,22 @@
 #projects {
   background-color: $white-color;
   color: $dark-blue-text;
-  margin: 5rem 0 10rem;
-  // padding-top: 15rem;
+  margin: -0.1rem;
+  // margin: 5rem 0 10rem;
+  // padding: 10rem 0 20rem 0;
+
+  &.dark {
+    background-color: $dark-grey;
+    color: $white-color;
+  }
+  ul.dark {
+    li {
+      background-color: #343a40;
+      &:nth-child(1) {
+        border-top: 1px solid rgb(46, 45, 45);
+      }
+    }
+  }
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -73,6 +87,16 @@
           margin-bottom: 3.2rem;
         }
       }
+    }
+  }
+  .card {
+    padding-top: 30px;
+    h4 {
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.4;
     }
   }
 }

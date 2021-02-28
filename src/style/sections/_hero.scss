@@ -14,6 +14,9 @@
   left: 0;
   bottom: 0;
   right: 0;
+  .hero-container {
+    z-index: 9999;
+  }
 
   // If you want to set a background image on the hero section, uncomment these with your custom image
 
@@ -24,18 +27,38 @@
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
+
+  &.dark {
+    background: $dark-grey;
+    color: $white-color;
+  }
+
   .effect-wrap {
     .effect {
       position: absolute;
     }
-    .square {
-      width: 35px;
-      height: 35px;
-      border: 4px solid #8a49ff;
-      top: 15%;
-      right: 10%;
-      animation: spin 40s ease-in-out infinite;
+    .moon-wrapper {
+      position: absolute;
+      top: 3%;
+      right: 5%;
+      transform: rotate(70deg);
+      .moon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 13px 13px 0 0 goldenrod;
+        animation: scale 20s linear infinite;
+      }
     }
+
+    // .square {
+    //   width: 35px;
+    //   height: 35px;
+    //   border: 4px solid #8a49ff;
+    //   top: 15%;
+    //   left: 10%;
+    //   animation: spin 40s ease-in-out infinite;
+    // }
     .dotted {
       left: 5%;
       bottom: 35%;
@@ -92,10 +115,11 @@
 
     .leaf-wrapper {
       position: absolute;
-      bottom: 45%;
+      bottom: 0%;
       left: 60%;
       width: 100px;
       height: 100px;
+      z-index: 1;
       // animation: scale 10s linear;
 
       @include respond(tab-port) {
@@ -187,10 +211,15 @@
   }
 
   .hero-title {
-    font-size: 4.6rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
+    color: #4a4a4a;
+    &.dark {
+      color: #606974;
+    }
 
     @include respond(tab-land) {
       font-size: 3.6rem;
@@ -206,16 +235,10 @@
     @include respond(phone-xs) {
       font-size: 2.8rem;
     }
-    .hero-dev-role {
-      font-size: 0.6em;
-      font-family: Georgia, Times New Roman, Times, serif;
-      color: #4a4a4a;
-    }
   }
 
   .hero-cta {
     display: flex;
-
     @include respond(tab-port) {
       justify-content: center;
     }
