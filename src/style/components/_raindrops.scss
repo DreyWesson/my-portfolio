@@ -1,9 +1,15 @@
 .rain {
   position: absolute;
   left: 0;
-  width: 100%;
+  max-width: 100vw;
+  width: 100vw;
   height: 100%;
   z-index: 10;
+  overflow: hidden;
+}
+
+.rain.front-row {
+  height: 50vh;
 }
 
 .rain.back-row {
@@ -18,6 +24,9 @@ body.back-row-toggle .rain.back-row {
 }
 
 .drop {
+  max-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
   position: absolute;
   bottom: 100%;
   width: 15px;
@@ -123,7 +132,7 @@ body.splat-toggle .splat {
   }
   100% {
     opacity: 0;
-    transform: scale(2.5);
+    transform: scale(3);
   }
 }
 @-webkit-keyframes splat {

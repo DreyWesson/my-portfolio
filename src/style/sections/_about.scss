@@ -1,6 +1,8 @@
 #about {
   position: relative;
   background-color: $primary-color;
+  // max-width: 100vw;
+  // overflow-x: hidden;
   background-image: linear-gradient(
     135deg,
     $primary-color 0%,

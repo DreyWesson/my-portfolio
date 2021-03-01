@@ -2,8 +2,8 @@
   background-color: $white-color;
   color: $dark-blue-text;
   margin: -0.1rem;
-  // margin: 5rem 0 10rem;
-  // padding: 10rem 0 20rem 0;
+  max-width: 100vw;
+  overflow: hidden;
 
   &.dark {
     background-color: $dark-grey;
