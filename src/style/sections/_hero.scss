@@ -1,6 +1,6 @@
 #hero {
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -46,8 +46,8 @@
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        box-shadow: 13px 13px 0 0 goldenrod;
-        animation: scale 20s linear infinite;
+        box-shadow: 13px 13px 0 0 rgb(167, 165, 165);
+        animation: move 60s linear infinite;
       }
     }
 
@@ -250,18 +250,18 @@
       }
     }
   }
-  @keyframes spin {
-    0%,
-    100% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(300deg);
-    }
-    70% {
-      transform: rotate(150deg);
-    }
-  }
+  // @keyframes spin {
+  //   0%,
+  //   100% {
+  //     transform: rotate(0deg);
+  //   }
+  //   50% {
+  //     transform: rotate(300deg);
+  //   }
+  //   70% {
+  //     transform: rotate(150deg);
+  //   }
+  // }
   @keyframes spinLinear {
     0% {
       transform: rotate(0deg);
@@ -279,12 +279,21 @@
       transform: translateY(250px);
     }
   }
-  @keyframes scale {
-    0% {
-      transform: scale(0.5);
-    }
+  // @keyframes scale {
+  //   0% {
+  //     transform: scale(0.5);
+  //   }
+  //   100% {
+  //     transform: scale(1);
+  //   }
+  // }
+  @keyframes move {
+    0%,
     100% {
-      transform: scale(1);
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px);
     }
   }
 }
