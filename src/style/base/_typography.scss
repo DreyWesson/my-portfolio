@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
 h1 {
   font-weight: 700;
@@ -8,6 +8,7 @@ p,
 a {
   font-family: "Montserrat", sans-serif;
   font-size: $default-font-size;
+  font-display: swap;
 }
 
 a,
