@@ -2,7 +2,6 @@ import initTilt from "./js/tilt";
 import initSr from "./js/sr";
 import aboutTabs from "./js/about-tab";
 import makeItRain from "./js/raindrops";
-
 import "./style/main.scss";
 
 $('a[href^="#"]').on("click", function (event) {
@@ -20,5 +19,6 @@ $('a[href^="#"]').on("click", function (event) {
 
 initSr();
 initTilt();
+
 aboutTabs();
 makeItRain();
