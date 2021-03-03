@@ -2,7 +2,10 @@
 
 ### Re-deploy
 
-`npm run build` and `netlify deploy --prod`
+```bash
+npm run build
+netlify deploy --prod
+```
 
 ## Features
 
