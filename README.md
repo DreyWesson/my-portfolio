@@ -3,8 +3,8 @@
 ### Re-deploy
 
 ```bash
-npm run build
-netlify deploy --prod
+$ npm run build
+$ netlify deploy --prod
 ```
 
 ## Features
@@ -17,7 +17,7 @@ netlify deploy --prod
 ⚡️ Optimized with Webpack\
 ⚡️ Well organized documentation
 
-To view a demo example, **[click here](https://dreywesson.netlify.app/)**
+To view a demo example, **[click here](https://dreywesson.netlify.app/ "dreywesson")**
 
 ---
 
