@@ -1,4 +1,5 @@
 const Webpack = require("webpack");
+const BrotliPlugin = require("brotli-webpack-plugin");
 module.exports = {
   entry: {
     vendor: "./src/vendor.js",
@@ -11,7 +12,7 @@ module.exports = {
         use: ["html-loader"],
       },
       {
-        test: /\.(jpg|jpeg|png|gif|svg|pdf)$/,
+        test: /\.(webP|jpg|jpeg|png|gif|svg|pdf)$/,
         use: [
           {
             loader: "file-loader",
@@ -30,6 +31,10 @@ module.exports = {
     new Webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
+    }),
+    new BrotliPlugin({
+      asset: "[file].br",
+      test: /\.(js)$/,
     }),
   ],
 };
