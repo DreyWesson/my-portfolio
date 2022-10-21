@@ -34,7 +34,7 @@ export default function () {
     );
 
     ScrollReveal().reveal(
-        ".puzzle-left",
+        ".puzzle-leftgrp1",
         assignProps(
             {
                 delay: 500,
@@ -45,22 +45,91 @@ export default function () {
         )
     );
     ScrollReveal().reveal(
-        ".puzzle-right",
+        ".puzzle-leftgrp2",
         assignProps(
             {
-                delay: 500,
-                distance: "50px",
-                origin: "right",
+                delay: 600,
+                distance: "80px",
+                origin: "left",
             },
             defaultProps
         )
     );
     ScrollReveal().reveal(
-        ".pivot",
+        ".puzzle-rightgrp2",
         assignProps(
             {
                 delay: 600,
                 distance: "80px",
+                origin: "right",
+            },
+            defaultProps
+        )
+    );
+
+    ScrollReveal().reveal(
+        ".puzzle-leftgrp3",
+        assignProps(
+            {
+                delay: 700,
+                distance: "160px",
+                origin: "left",
+            },
+            defaultProps
+        )
+    );
+
+    ScrollReveal().reveal(
+        ".puzzle-leftgrp4",
+        assignProps(
+            {
+                delay: 800,
+                distance: "300px",
+                origin: "left",
+            },
+            defaultProps
+        )
+    );
+    ScrollReveal().reveal(
+        ".puzzle-rightgrp4",
+        assignProps(
+            {
+                delay: 800,
+                distance: "300px",
+                origin: "right",
+            },
+            defaultProps
+        )
+    );
+
+    // ScrollReveal().reveal(
+    //     ".puzzle-left",
+    //     assignProps(
+    //         {
+    //             delay: 500,
+    //             distance: "50px",
+    //             origin: "left",
+    //         },
+    //         defaultProps
+    //     )
+    // );
+    // ScrollReveal().reveal(
+    //     ".puzzle-right",
+    //     assignProps(
+    //         {
+    //             delay: 500,
+    //             distance: "50px",
+    //             origin: "right",
+    //         },
+    //         defaultProps
+    //     )
+    // );
+    ScrollReveal().reveal(
+        ".pivot",
+        assignProps(
+            {
+                delay: 800,
+                distance: "300px",
                 origin: "top",
             },
             defaultProps
