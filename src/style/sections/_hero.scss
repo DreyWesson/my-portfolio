@@ -52,14 +52,6 @@
       }
     }
 
-    // .square {
-    //   width: 35px;
-    //   height: 35px;
-    //   border: 4px solid #8a49ff;
-    //   top: 15%;
-    //   left: 10%;
-    //   animation: spin 40s ease-in-out infinite;
-    // }
     .dotted {
       left: 5%;
       bottom: 35%;
@@ -219,38 +211,92 @@
     text-align: left;
     color: #4a4a4a;
     font-display: swap;
+    display: none;
     &.dark {
       color: #606974;
     }
 
     @include respond(tab-land) {
       font-size: 3.6rem;
+      display: none;
     }
     @include respond(tab-port) {
       font-size: 2.9rem;
       text-align: center;
+      display: none;
     }
     @include respond(phone) {
       font-size: 3.5rem;
       line-height: 1.5;
+      display: block;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
+      display: block;
     }
   }
 
   .hero-cta {
     display: flex;
-    @include respond(tab-port) {
-      justify-content: center;
-    }
-
+    justify-content: center;
     & a {
       font-size: 2.4rem;
       @include respond(phone) {
         font-size: 2rem;
       }
     }
+  }
+
+  .puzzleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    @include respond(phone) {
+      display: none;
+    }
+    @include respond(phone-xs) {
+      display: none;
+    }
+  }
+  .puzzle .word {
+    display: flex;
+  }
+  .puzzle .word .letter {
+    font-weight: bolder;
+    font-size: 24px;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0.05em;
+    background-color: #323232;
+    color: white;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    order: 2;
+    right: 50%;
+  }
+  .puzzle .word .letter:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .puzzle .word .letter:last-child {
+    margin-right: auto;
+  }
+  
+  .puzzle .word .pivot {
+    background-color: #35724a;
+  }
+  
+  .puzzle .word .pivot,
+  .puzzle .word .pivot ~ .letter {
+    order: 1;
+    left: 50%;
   }
   // @keyframes spin {
   //   0%,
