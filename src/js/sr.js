@@ -102,28 +102,6 @@ export default function () {
         )
     );
 
-    // ScrollReveal().reveal(
-    //     ".puzzle-left",
-    //     assignProps(
-    //         {
-    //             delay: 500,
-    //             distance: "50px",
-    //             origin: "left",
-    //         },
-    //         defaultProps
-    //     )
-    // );
-    // ScrollReveal().reveal(
-    //     ".puzzle-right",
-    //     assignProps(
-    //         {
-    //             delay: 500,
-    //             distance: "50px",
-    //             origin: "right",
-    //         },
-    //         defaultProps
-    //     )
-    // );
     ScrollReveal().reveal(
         ".pivot",
         assignProps(
@@ -140,8 +118,8 @@ export default function () {
         ".hero-cta",
         assignProps(
             {
-                delay: 600,
-                distance: "80px",
+                delay: 800,
+                distance: "120px",
                 origin: "bottom",
             },
             defaultProps
